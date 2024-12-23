@@ -1,0 +1,84 @@
+body {
+    background-image: url(src/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+.rounded-header {
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1100px;
+}
+
+.rounded-header .logo {
+    background-color: #ffd700;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.rounded-header .btn {
+    background-color: #ffd700;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.rounded-header .btn:hover {
+    background-color: #F5EFFF;
+}
+
+.nav-link {
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.nav-link:hover {
+    text-decoration: underline 2px solid #ffd700;
+}
+
+.hero-section {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.highlight {
+    background-color: #ffd700;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.mainsubtext {
+    color: #fff;
+}
+
+.hero-section .para {
+    color: #fff;
+    text-align: center;
+    white-space: pre-line;
+    display: inline-block;
+    width: auto;
+    max-width: 800px; 
+    margin-left: auto;
+    margin-right: auto;
+    font-family: monospace;
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
