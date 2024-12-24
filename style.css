@@ -1,3 +1,4 @@
+/* General Body Styles */
 body {
     background-image: url(src/background.jpeg);
     background-size: cover;
@@ -7,19 +8,20 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the body takes the full height of the viewport */
+    min-height: 100vh;
     margin: 0;
-    perspective: 1000px; /* Add 3D perspective */
-    overflow-x: hidden; /* Prevent horizontal scroll from 3D effects */
+    perspective: 1000px;
+    overflow-x: hidden;
 }
 
+/* Rounded Header */
 .rounded-header {
     border-radius: 40px;
     background-color: #fff;
-    padding: 15px 10px;
+    padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-    width: 75%; /* Adjust width to take up more space */
+    width: 75%;
     max-width: 1400px;
 }
 
@@ -27,34 +29,36 @@ body {
     text-decoration: none;
     background-color: #ffd700;
     border-radius: 50%;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 40px;
     height: 40px;
 }
 
-
 .rounded-header .btn {
     background-color: #ffd700;
     border: none;
     border-radius: 20px;
     padding: 5px 15px;
+    transition: background-color 0.3s ease;
 }
 
 .rounded-header .btn:hover {
-    background-color: #F5EFFF;
+    background-color: #f5efff;
 }
 
+/* Navigation Links */
 .nav-link {
     text-decoration: none;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
+    transition: color 0.3s, text-decoration 0.3s;
 }
 
 .nav-link:hover {
     text-decoration: underline 2px solid #ffd700;
 }
 
+/* Button Styles */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -65,7 +69,7 @@ body {
     font-weight: bold;
     text-decoration: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s, box-shadow 0.3s;
     transform-style: preserve-3d;
 }
 
@@ -74,14 +78,14 @@ body {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Optional: Active (clicked) effect */
 .btn:active {
     transform: perspective(600px) rotateX(5deg) rotateY(-5deg) scale(0.95);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Hero Section */
 main {
-    flex: 1; /* Allow the main content to take up remaining space */
+    flex: 1;
 }
 
 .hero-section {
@@ -100,32 +104,23 @@ main {
     border-radius: 5px;
 }
 
-.mainsubtext {
+.mainsubtext, .hero-section .para {
     color: #fff;
+    text-align: center;
 }
 
 .hero-section .para {
-    color: #fff;
-    text-align: center;
     white-space: pre-line;
     display: inline-block;
-    width: auto;
-    max-width: 800px; 
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 800px;
     font-family: monospace;
 }
 
-.typewriter {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
+/* Works Section */
+.works-section {
+    margin: 300px 0 60px;
 }
 
-.works-section{
-    margin-top: 300px;
-    margin-bottom: 60px;
-}
 .works-section .card {
     margin-bottom: 20px;
     border-radius: 15px;
@@ -134,6 +129,9 @@ main {
 }
 
 .works-section .card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
     border-bottom: 1px solid #ddd;
 }
 
@@ -150,67 +148,19 @@ main {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 30px;
-    color: white;
-}
-
-.card {
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px white(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.card-img-top {
-    height: 200px; /* Set a fixed height */
-    width: 100%;   /* Ensure it spans the card width */
-    object-fit: cover; /* Crop the image to fit */
-    border-bottom: 1px solid #ddd; /* Optional for a clean separation */
-}
-
-.card-body {
-    padding: 20px;
-}
-
-.card-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.card-text {
-    color: #666;
-    margin-bottom: 15px;
-}
-
-.btn-primary {
-    background-color: #ffd700;
-    border: none;
-}
-
-.btn-primary:hover {
-    background-color: #f0c400;
-}
-
-.btn-secondary {
-    background-color: #333;
     color: #fff;
-    border: none;
 }
 
-.btn-secondary:hover {
-    background-color: #D9EAFD;
-}
-
+/* Footer */
 .footer {
     border-radius: 30px;
-    background-color: #fff;
     padding: 15px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-    width: 75%; /* Adjust width to take up more space */
-    max-width: 1400px; /* Increase max width */
+    width: 75%;
+    max-width: 1400px;
     background-color: #f8f9fa;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .footer .container {
@@ -251,4 +201,17 @@ main {
     font-size: 12px;
     color: #666;
     margin-top: 20px;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 576px) {
+    .footer {
+        padding: 10px;
+    }
+    .footer-section h6, .footer-section a {
+        font-size: 12px;
+    }
+    .footer-credits {
+        font-size: 10px;
+    }
 }
