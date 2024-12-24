@@ -11,7 +11,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
+    console.log("Document is ready.");
     function typeWriterEffect(element, text, speed, callback) {
+        console.log(`Typing text: ${text}`);
         let index = 0;
         let typedText = '';
 
@@ -19,8 +21,7 @@
 
         let interval = setInterval(() => {
             typedText += text[index];
-            $(element).text(typedText);  // Update text dynamically
-
+            $(element).text(typedText); // Update text dynamically
             index++;
             if (index >= text.length) {
                 clearInterval(interval); // Stop when text is complete
@@ -28,16 +29,64 @@
             }
         }, speed);
     }
-
-    // Start the typing effect for "Hey, I'm Uvindu"
     typeWriterEffect(".typewriter", "Hey, I'm Uvindu", 100, function () {
-        // After "Hey, I'm Uvindu" is typed, fade in "Sankalpa"
         $(".mainsubtext.secname").fadeIn(1000, function () {
-            // After "Sankalpa" appears, start typing the paragraph
             typeWriterEffect(".para", $(".para").data("text"), 50);
         });
     });
 });
+
+    </script>
+    <!---<script>
+        // Disable right-click
+        document.addEventListener('contextmenu', (event) => {
+            event.preventDefault();
+        });
+    
+        // Disable specific keyboard shortcuts (e.g., F12, Ctrl+Shift+I, etc.)
+        document.addEventListener('keydown', (event) => {
+            if (
+                event.key === 'F12' || 
+                (event.ctrlKey && event.shiftKey && ['I', 'J', 'C'].includes(event.key)) ||
+                (event.ctrlKey && event.key === 'U') // Ctrl+U
+            ) {
+                event.preventDefault();
+            }
+        });
+    
+        // Monitor for dev tools open (using a timing discrepancy method)
+        let devtoolsOpen = false;
+        const threshold = 160;
+        setInterval(() => {
+            const start = performance.now();
+            debugger; // This triggers a pause if dev tools are open
+            const timeTaken = performance.now() - start;
+            if (timeTaken > threshold) {
+                devtoolsOpen = true;
+                alert("Developer tools detected! Please close them to continue.");
+            }
+        }, 1000);
+    </script>-->
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.works-section .card').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const cardRect = card.getBoundingClientRect();
+            const centerX = cardRect.left + cardRect.width / 2;
+            const centerY = cardRect.top + cardRect.height / 2;
+            const x = (e.clientX - centerX) / 20;
+            const y = (e.clientY - centerY) / 20;
+
+            card.style.transform = `rotateY(${x}deg) rotateX(${-y}deg)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'rotateY(0deg) rotateX(0deg)';
+        });
+    });
+});
+
     </script>
 </head>
 <body>
@@ -45,7 +94,9 @@
         <nav class="navbar navbar-expand-lg navbar-light w-100">
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 <!-- Logo -->
-                <a class="logo text-dark" href="#home">U</a>
+                <a class="logo" href="#home">
+                    <img src="src/favicon.ico" alt="Logo" class="logo-icon" style="width: 20px; height: 20px;">
+                </a>
     
                 <!-- Navbar Toggler (for mobile view) -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,13 +107,16 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#home">Home</a>
+                            <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#works">Works</a>
+                            <a class="nav-link" href="#education">Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#footer">Contact</a>
+                            <a class="nav-link" href="#works">Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -82,6 +136,51 @@
             <p class="mt-4 para" data-text="I am a 2nd-year Software Engineering student at NiBM with a strong background in Java, C#, C and web development. I enjoy creating innovative and user-friendly applications. I have completed several projects and I am excited to apply my skills in a dynamic and challenging environment."></p>
         </div>
     </main>
+
+    <section class="timeline" id="education">
+        <div class="title-wrapper">
+          <div class="icon-box">
+            <ion-icon name="book-outline"></ion-icon>
+          </div>
+          <h3 class="h3">Education</h3>
+        </div>
+        <div class="timeline-list">
+          <div class="timeline-item">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+              <h4 class="timeline-item-title">Higher National Diploma in Software Engineering - NIBM</h4>
+              <span class="timeline-date">2024 - Present</span>
+              <p class="timeline-text">
+                I am currently studying for a Higher National Diploma in Software Engineering at NiBM.
+              </p>
+            </div>
+          </div>
+      
+          <div class="timeline-item">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+              <h4 class="timeline-item-title">Diploma In Software Engineering - NIBM</h4>
+              <span class="timeline-date">2023 - Present</span>
+              <p class="timeline-text">
+                
+              </p>
+            </div>
+          </div>
+      
+          <div class="timeline-item">
+            <div class="timeline-icon"></div>
+            <div class="timeline-content">
+              <h4 class="timeline-item-title">English Diploma - Aquinas College</h4>
+              <span class="timeline-date">2018 Jan - Jun</span>
+              <p class="timeline-text">
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
 
     <section id="works" class="works-section text-center">
         <div class="container">
