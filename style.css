@@ -313,7 +313,7 @@ main {
         margin-left: 30px; /* Reduce left margin for better fit */
     }
 }
-@media (max-width: 576px) {
+@media (max-width: 412px) {
     body {
         background-image: url('src/image.png'); /* Use a different image for mobile */
         background-size: cover; /* Adjust size */
