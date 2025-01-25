@@ -131,11 +131,13 @@ main {
     border-radius: 15px !important;
     overflow: hidden !important;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
-    transform-style: preserve-3d !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    transform: translateZ(0);
 }
 
 .works-section .card:hover {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05) translateZ(10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
 }
 
 .works-section .card img {
@@ -143,11 +145,17 @@ main {
     width: 100%;
     object-fit: cover;
     border-bottom: 1px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.works-section .card:hover img {
+    transform: scale(1.02);
 }
 
 .works-section .btn-primary {
     background-color: #ffd700;
     border: none;
+    transition: background-color 0.3s ease;
 }
 
 .works-section .btn-primary:hover {
@@ -158,6 +166,7 @@ main {
     margin-bottom: 30px;
     color: #fff;
 }
+
 
 /* Footer */
 .footer {
@@ -329,6 +338,10 @@ main {
     margin: 30px auto;
     width: 80%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the language boxes */
+    gap: 20px; /* Add spacing between the boxes */
 }
 
 .section-title {
@@ -364,5 +377,26 @@ main {
     transform: scale(1.3);
 }
 
+/* Mobile view adjustment for Programming Language Section */
+@media (max-width: 768px) {
+    .languages-section {
+        justify-content: center; /* Evenly distribute the boxes */
+        display: flex;
+        flex-wrap: wrap;
+    }
 
+    .language-box {
+        width: 100px; /* Set box width */
+        height: 100px;
+        margin: 10px auto; /* Add margin for spacing */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .language-box img {
+        width: 60px; /* Smaller icon size for mobile */
+        height: 60px;
+    }
+}
 
