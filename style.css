@@ -155,8 +155,6 @@ main {
 }
 
 .section-title {
-    font-size: 32px;
-    font-weight: bold;
     margin-bottom: 30px;
     color: #fff;
 }
@@ -227,6 +225,7 @@ main {
     }
 }
 
+/*timeline*/
 .timeline {
     width: 80%;
     margin: 50px auto;
