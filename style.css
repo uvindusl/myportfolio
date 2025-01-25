@@ -320,4 +320,49 @@ main {
     }
 }
 
+/* Programming Languages Section */
+.languages-section {
+    padding: 50px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin: 30px auto;
+    width: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.language-box {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f4f6;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.language-box:hover {
+    transform: translateY(-20px) scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.language-icon {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.language-box:hover .language-icon {
+    transform: scale(1.3);
+}
+
+
 
