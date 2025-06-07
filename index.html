@@ -1,268 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uvindu Sankalpa</title>
-    <link rel="icon" href="src/favicon.ico" type="image/x-icon">
-    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="src/favicon.ico" type="image/x-icon" />
+    <link href="style.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Jquery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Javascript-->
     <script src="script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navigation Section -->
-    <header class="rounded-header d-flex justify-content-between align-items-center">
-        <nav class="navbar navbar-expand-lg navbar-light w-100">
-            <div class="container-fluid d-flex justify-content-between align-items-center">
-                <!-- Logo -->
-                <a class="logo" href="#home">
-                    <img src="src/favicon.ico" alt="Logo" class="logo-icon" style="width: 20px; height: 20px;">
-                </a>
-    
-                <!-- Navbar Toggler (for mobile view) -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
-                <!-- Centered Navigation Links -->
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#works">Works</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#footer">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-    
-                <!-- Button: Visible only on larger screens -->
-                <a href="mailto:uvindusankalpa2021@gmail.com" class="btn d-none d-lg-block">Uvindu Sankalpa</a>
-            </div>
-        </nav>
+    <header
+      class="rounded-header d-flex justify-content-between align-items-center"
+    >
+      <nav class="navbar navbar-expand-lg navbar-light w-100">
+        <div
+          class="container-fluid d-flex justify-content-between align-items-center"
+        >
+          <!-- Logo -->
+          <a class="logo" href="#home">
+            <img
+              src="src/favicon.ico"
+              alt="Logo"
+              class="logo-icon"
+              style="width: 20px; height: 20px"
+            />
+          </a>
+
+          <!-- Navbar Toggler (for mobile view) -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Centered Navigation Links -->
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#works">Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Button: Visible only on larger screens -->
+          <a
+            href="mailto:uvindusankalpa2021@gmail.com"
+            class="btn d-none d-lg-block"
+            >Uvindu Sankalpa</a
+          >
+        </div>
+      </nav>
     </header>
-    
+
     <!-- HOME Section -->
     <main class="hero-section text-center" id="home">
-        <div class="container">
-            <h1>
-                <span class="highlight typewriter"></span>
-            </h1>
-            <h2 class="mt-3 mainsubtext secname" style="display:none;">Sankalpa</h2>
-            <p class="mt-4 para" data-text="I am a 2nd-year Software Engineering student at NIBM with a strong background in Java, C#, C and web development. I enjoy creating innovative and user-friendly applications. I have completed several projects and I am excited to apply my skills in a dynamic and challenging environment."></p>
-        </div>
+      <div class="container">
+        <h1>
+          <span class="highlight typewriter"></span>
+        </h1>
+        <h2 class="mt-3 mainsubtext secname" style="display: none">Sankalpa</h2>
+        <p
+          class="mt-4 para"
+          data-text="I am a 2nd-year Software Engineering student at NIBM with a strong background in Java, C#, C and web development. I enjoy creating innovative and user-friendly applications. I have completed several projects and I am excited to apply my skills in a dynamic and challenging environment."
+        ></p>
+      </div>
     </main>
 
     <!-- Programin Languge Section -->
     <section id="programming-languages" class="languages-section text-center">
-        <div class="container">
-            <h3 class="section-title">Programming Languages</h3>
-            <div class="row justify-content-center">
-                <div class="col-md-3">
-                    <div class="language-box">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-                            alt="Java"
-                            class="language-icon"
-                        />
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="language-box">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-                            alt="C#"
-                            class="language-icon"
-                        />
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="language-box">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
-                            alt="C"
-                            class="language-icon"
-                        />
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="language-box">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                            alt="JavaScript"
-                            class="language-icon"
-                        />
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="language-box">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                            alt="HTML"
-                            class="language-icon"
-                        />
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="language-box">
-                        <img
-                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                            alt="CSS"
-                            class="language-icon"
-                        />
-                    </div>
-                </div>
+      <div class="container">
+        <h3 class="section-title">Programming Languages</h3>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <div class="language-box">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                alt="Java"
+                class="language-icon"
+              />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="language-box">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                alt="C#"
+                class="language-icon"
+              />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="language-box">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                alt="C"
+                class="language-icon"
+              />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="language-box">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+                class="language-icon"
+              />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="language-box">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML"
+                class="language-icon"
+              />
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="language-box">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS"
+                class="language-icon"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="language-box">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                alt="React"
+                class="language-icon"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="language-box">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                alt="Python"
+                class="language-icon"
+              />
             </div>
         </div>
+
+        <div class="col-md-3">
+            <div class="language-box">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                alt="nodejs"
+                class="language-icon"
+              />
+            </div>
+        </div>
+
+         <div class="col-md-3">
+            <div class="language-box">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                alt="typescript"
+                class="language-icon"
+              />
+            </div>
+        </div>
+        
+      </div>
     </section>
-    
-    <!-- Education Section -->    
+
+    <!-- Education Section -->
 
     <section class="timeline" id="education">
-        <div class="title-wrapper">
-          <div class="icon-box">
-            <ion-icon name="book-outline"></ion-icon>
-          </div>
-          <h3 class="h3">Education</h3>
+      <div class="title-wrapper">
+        <div class="icon-box">
+          <ion-icon name="book-outline"></ion-icon>
         </div>
-        <div class="timeline-list">
-          <div class="timeline-item">
-            <div class="timeline-icon"></div>
-            <div class="timeline-content">
-              <h4 class="timeline-item-title">Higher National Diploma in Software Engineering - NIBM</h4>
-              <span class="timeline-date">2024 - Present</span>
-              <p class="timeline-text">
-                
-              </p>
-            </div>
+        <h3 class="h3">Education</h3>
+      </div>
+      <div class="timeline-list">
+        <div class="timeline-item">
+          <div class="timeline-icon"></div>
+          <div class="timeline-content">
+            <h4 class="timeline-item-title">
+              BSc (Hons) Software Engineering, Computer Software Engineering -
+              NIBM
+            </h4>
+            <span class="timeline-date">2023 - Present</span>
+            <p class="timeline-text"></p>
           </div>
-      
-          <div class="timeline-item">
-            <div class="timeline-icon"></div>
-            <div class="timeline-content">
-              <h4 class="timeline-item-title">Diploma In Software Engineering - NIBM</h4>
-              <span class="timeline-date">2023 - 2024</span>
-              <p class="timeline-text">
-                
-              </p>
-            </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon"></div>
+          <div class="timeline-content">
+            <h4 class="timeline-item-title">
+              English Diploma - Aquinas College
+            </h4>
+            <span class="timeline-date">2023 - 2025</span>
+            <p class="timeline-text"></p>
           </div>
-      
-          <div class="timeline-item">
-            <div class="timeline-icon"></div>
-            <div class="timeline-content">
-              <h4 class="timeline-item-title">English Diploma - Aquinas College</h4>
-              <span class="timeline-date">2023 - 2024</span>
-              <p class="timeline-text">
-                
-              </p>
-            </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon"></div>
+          <div class="timeline-content">
+            <h4 class="timeline-item-title">
+              Certificate Course In Software Engineering - NIBM
+            </h4>
+            <span class="timeline-date">2023</span>
+            <p class="timeline-text"></p>
           </div>
-        
-          <div class="timeline-item">
-            <div class="timeline-icon"></div>
-            <div class="timeline-content">
-              <h4 class="timeline-item-title">Certificate Course In Software Engineering - NIBM</h4>
-              <span class="timeline-date">2023</span>
-              <p class="timeline-text">
-                
-              </p>
-            </div>
-          </div>
-        
+        </div>
 
         <div class="timeline-item">
           <div class="timeline-icon"></div>
           <div class="timeline-content">
             <h4 class="timeline-item-title">GCE Ordinary Level in Sri Lanka</h4>
             <span class="timeline-date">2023</span>
-            <p class="timeline-text">
-              
-            </p>
+            <p class="timeline-text"></p>
           </div>
         </div>
       </div>
-      </section>
-      
-      
+    </section>
+
     <!-- MY Work Section -->
 
     <section id="works" class="works-section text-center">
-        <div class="container">
-            <h3 class="section-title">My Works</h3>
-            <div class="row justify-content-center">
-                <!-- Work 1 -->
-                <div class="col-md-5">
-                    <div class="card">
-                        <img src="src/train.png" class="card-img-top" alt="Train Ticket Reservation System">
-                        <div class="card-body">
-                            <h5 class="card-title">Train Ticket Reservation System</h5>
-                            <p class="card-text">Simple Train Ticket Reservation System created using Java</p>
-                            <a href="https://github.com/uvindusl/Train_Ticket_Reservation_System" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Work 2 -->
-                <div class="col-md-5">
-                    <div class="card">
-                        <img src="src/lms.png" class="card-img-top" alt="LMS">
-                        <div class="card-body">
-                            <h5 class="card-title">LMS</h5>
-                            <p class="card-text">Web application for student and lecturer management</p>
-                            <a href="https://github.com/uvindusl/dmwcw" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Work 3 -->
-                <div class="col-md-5">
-                  <div class="card">
-                      <img src="src/todoapp.png" class="card-img-top" alt="To do Application">
-                      <div class="card-body">
-                          <h5 class="card-title">To Do Application</h5>
-                          <p class="card-text">To Do Application created using C# using VIsual Studio 2022</p>
-                          <a href="https://github.com/uvindusl/To-do-Application" class="btn btn-primary">View Project</a>
-                      </div>
-                  </div>
+      <div class="container">
+        <h3 class="section-title">My Projects</h3>
+        <div class="row justify-content-center">
+
+          <div class="col-md-5">
+            <div class="card">
+              <img src="src/Ead2.jpeg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <h4 class="card-title">
+                  Microservice-based food ordering system with Java and React
+                  TS
+                </h4>
+                <p class="card-text">
+                <h5><b>Team mates</b></h5>
+                <p>Dinidu Gangadara<br> Harindu Vihan <br> Thusathmi Sapumanage <br> Dasuni Jayasinghe</p>
+                </p>
+                <a
+                  href="https://drive.google.com/file/d/1SmPPMkrGZX4wec0aIydHvMSSid_nWI8N/view?usp=sharing"
+                  class="btn btn-primary"
+                  >View Project
+                </a>
               </div>
             </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="card">
+              <img src="src/Urbanfoods.jpeg" class="card-img-top" alt="" />
+              <div class="card-body">
+                <h4 class="card-title">
+                    Urban Foods (React Vite, Java Spring-boot, Oracle PL/SQL, MongoDB)
+                </h4>
+                <p class="card-text">
+                <h5><b>Team mates</b></h5>
+                <p>Dinidu Gangadara<br> Harindu Vihan <br> Thusathmi Sapumanage</p>
+                </p>
+                <a
+                  href="https://github.com/uvindusl/EAD2-Frontend"
+                  class="btn btn-primary"
+                  >View Project
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="card">
+              <img src="src/cat-care.png" class="card-img-top" alt="" />
+              <div class="card-body">
+                <h4 class="card-title">Automated Cat Care Robot</h4>
+                <p class="card-text">
+                <h5><b>Team mates</b></h5>
+                <p>Dinidu Gangadara<br> Harindu Vihan <br> Thusathmi Sapumanage</p>
+                </p>
+                <a
+                  href="https://github.com/mkdinindu/Robotics_HNDSE_Repo"
+                  class="btn btn-primary"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="card">
+              <img src="src/lms.png" class="card-img-top" alt="LMS" />
+              <div class="card-body">
+                <h4 class="card-title">Student Course Tracker</h4>
+                <p class="card-text">
+                  <h5><b>Team mates</b></h5>
+                <p>Dinidu Gangadara<br> Harindu Vihan <br> Thusathmi Sapumanage</p>
+                </p>
+                <a
+                  href="https://github.com/uvindusl/dmwcw"
+                  class="btn btn-primary"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="card">
+              <img
+                src="src/train.png"
+                class="card-img-top"
+                alt="Train Ticket Reservation System"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Train Ticket Reservation System</h4>
+                <p class="card-text">
+                  Simple Train Ticket Reservation System created using Java
+                </p>
+                <a
+                  href="https://github.com/uvindusl/Train_Ticket_Reservation_System"
+                  class="btn btn-primary"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="card">
+              <img
+                src="src/todoapp.png"
+                class="card-img-top"
+                alt="To do Application"
+              />
+              <div class="card-body">
+                <h5 class="card-title">To Do Application</h5>
+                <p class="card-text">
+                  To Do Application created using C# using VIsual Studio 2022
+                </p>
+                <a
+                  href="https://github.com/uvindusl/To-do-Application"
+                  class="btn btn-primary"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="card">
+              <img
+                src="src/ECA.png"
+                class="card-img-top"
+                alt="ECA"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Intelligent Energy Optimization System</h4>
+                <p class="card-text">
+                <h5><b>Team mates</b></h5>
+                <p>Dinidu Gangadara<br> Harindu Vihan <br> Thusathmi Sapumanage</p>
+                </p>
+                <a
+                  href="https://github.com/uvindusl/To-do-Application"
+                  class="btn btn-primary"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer Section -->
     <footer class="footer" id="footer">
-        <div class="container d-flex justify-content-between align-items-center flex-wrap">
-            <div class="footer-section">
-                <h6>Contact Me</h6>
-                <a href="mailto:uvindusankalpa2021@gmail.com">uvindusankalpa2021@gmail.com</a>
-            </div>
-            <div class="footer-section">
-                <h6>Follow Me</h6>
-                <a href="https://www.instagram.com/sl_uvindu_xx/">Instagram</a>
-                <a href="https://github.com/uvindusl">GitHub</a>
-                <a href="https://www.linkedin.com/in/uvindu-sankalpa-a0a5a2276/">LinkedIn</a>
-            </div>
-            <div class="footer-section">
-                <h6>Portfolio created by</h6>
-                Uvindu Sankalpa
-            </div>
+      <div
+        class="container d-flex justify-content-between align-items-center flex-wrap"
+      >
+        <div class="footer-section">
+          <h6>Contact Me</h6>
+          <a href="mailto:uvindusankalpa2021@gmail.com"
+            >uvindusankalpa2021@gmail.com</a
+          >
         </div>
-        <div class="footer-credits text-center mt-3">
-            <p>&copy;Uvindu Sankalpa</p>
+        <div class="footer-section">
+          <h6>Follow Me</h6>
+          <a href="https://www.instagram.com/sl_uvindu_xx/">Instagram</a>
+          <a href="https://github.com/uvindusl">GitHub</a>
+          <a href="https://www.linkedin.com/in/uvindu-sankalpa-a0a5a2276/"
+            >LinkedIn</a
+          >
         </div>
+        <div class="footer-section">
+          <h6>Made with ❤️</h6>
+          Uvindu Sankalpa
+        </div>
+      </div>
+      <div class="footer-credits text-center mt-3">
+        <p>&copy;Uvindu Sankalpa</p>
+      </div>
     </footer>
-    
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
