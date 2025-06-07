@@ -91,6 +91,11 @@ main {
   flex: 1;
 }
 
+.team {
+  text-decoration: none;
+  color: #0090af;
+}
+
 .hero-section {
   margin-top: 100px;
   padding: 50px;
